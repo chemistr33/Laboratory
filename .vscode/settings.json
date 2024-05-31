@@ -1,0 +1,9 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/fransys/C/Laboratory",
+            "binaryPath": "/home/fransys/C/Laboratory/exe",
+            "binaryArgs": []
+        }
+    ]
+}

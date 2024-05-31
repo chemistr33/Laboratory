@@ -1,0 +1,12 @@
+digraph circular_doubly_linked_list {
+  node [shape=record, height=1, width=3];
+  edge [arrowhead=normal, arrowtail=dot, penwidth=0.5, arrowsize=0.5];
+
+  node0 [label="<prev> | <data> A | <next>"];
+  node1 [label="<prev> | <data> B | <next>"];
+  node2 [label="<prev> | <data> C | <next>"];
+
+  node0:next -> node1:prev [dir=both, taillabel="next", headlabel="prev"];
+  node1:next -> node2:prev [dir=both, taillabel="next", headlabel="prev"];
+  node2:next -> node0:prev [dir=both, taillabel="next", headlabel="prev"];
+}

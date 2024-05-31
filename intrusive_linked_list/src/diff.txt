@@ -1,0 +1,49 @@
+#include "../inc/intrusive.h"
+
+void *ins_after(list_t *list, node_t *ref, node_t *node){
+    // return if list, ref, or node is null
+    if (!list || !ref || !node){
+        return NULL;
+    } 
+    // case 0 - ref has next pointer 
+    if(ref->next){
+        node->next = ref->next;
+        node->prev = ref;
+        ref->next->prev = node;
+        ref->next = node;
+        list->length++;
+    } 
+    // case 1 - ref has null next pointer (ref is tail pointer)
+    else {
+        node->prev = ref;
+        ref->next = node;
+        list->tail = node;
+        list->length++;
+    }
+}
+
+void ins_before(list_t *list, node_t *ref, node_t *node){
+    // return if list, ref, or node is null
+    if (!list || !ref || !node){
+        return;
+    }
+    // case 0 - ref has prev pointer
+    if(ref->prev){
+        node->prev = ref->prev;
+        node->next = ref;
+        ref->prev->next = node;
+        ref->prev = node;
+        list->length++;
+    }
+    // case 1 - ref has null prev pointer (ref is head pointer)
+    else {
+        node->next = ref;
+        ref->prev = node;
+        list->head = node;
+        list->length++;
+    }
+}
+
+
+
+

@@ -1,0 +1,35 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/fransys/C/Laboratory/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+BAR	lab.h	/^#define BAR(/;"	d
+COLORS	lab.h	/^	COLORS$/;"	e	enum:Color
+COLORS	lab.h	/^#define COLORS /;"	d
+Color	lab.h	/^enum Color {$/;"	g
+DEFER	lab.h	/^#define DEFER(/;"	d
+EMPTY	lab.h	/^#define EMPTY(/;"	d
+EVAL	lab.h	/^#define EVAL(/;"	d
+FOO	lab.h	/^#define FOO(/;"	d
+HELLO	lab.h	/^#define HELLO(/;"	d
+LAB_H_	lab.h	/^#define LAB_H_$/;"	d
+N_ELEMENTS	lab.h	/^#define N_ELEMENTS(/;"	d
+TARGET	Makefile	/^TARGET: exe$/;"	t
+X	lab.h	/^#define X(/;"	d
+clean	Makefile	/^clean:$/;"	t
+exe	Makefile	/^exe: lab.o$/;"	t
+gColorNames	lab.h	/^const char *gColorNames[COLOR_COUNT + 1] = {$/;"	v	typeref:typename:const char * []
+lab.o	Makefile	/^lab.o: lab.c$/;"	t
+loop	lab.h	/^#define loop(/;"	d
+loop_epilogue	lab.h	/^void loop_epilogue() { printf("terminating loop\\n"); }$/;"	f	typeref:typename:void
+loop_iter	lab.h	/^void loop_iter() { printf("iteration\\n"); }$/;"	f	typeref:typename:void
+loop_prologue	lab.h	/^void loop_prologue() { printf("starting loop\\n"); }$/;"	f	typeref:typename:void
+main	lab.c	/^int main(){$/;"	f	typeref:typename:int
+main	random1.c	/^int main(){$/;"	f	typeref:typename:int
+preproc	Makefile	/^preproc:$/;"	t
